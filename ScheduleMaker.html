@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Schedule Maker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    var con = function getSelectValue()
+    {
+
+      var dayselect = document.getElementById('day').value;
+      var timeselect = document.getElementById('time').value;
+      var daytime = dayselect + timeselect;
+      console.log(daytime);
+
+      return daytime;
+    }
+    function del() {
+      desc = "";
+
+      if (con() === "monday8-9") {
+       document.getElementById('8mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday8-9") {
+        document.getElementById('8tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday8-9") {
+        document.getElementById('8wed').innerHTML = desc;
+      }
+      else if (con() === "thursday8-9") {
+        document.getElementById('8thu').innerHTML = desc;
+      }
+      else if (con() === "friday8-9") {
+        document.getElementById('8fri').innerHTML = desc;
+      }
+      else if (con() === "saturday8-9") {
+        document.getElementById('8sat').innerHTML = desc;
+      }
+      else if (con() === "sunday8-9") {
+        document.getElementById('8sun').innerHTML = desc;
+      }
+      else if (con() === "monday9-10") {
+        document.getElementById('9mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday9-10") {
+        document.getElementById('9tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday9-10") {
+        document.getElementById('9wed').innerHTML = desc;
+      }
+      else if (con() === "thursday9-10") {
+        document.getElementById('9thu').innerHTML = desc;
+      }
+      else if (con() === "friday9-10") {
+        document.getElementById('9fri').innerHTML = desc;
+      }
+      else if (con() === "saturday9-10") {
+        document.getElementById('9sat').innerHTML = desc;
+      }
+      else if (con() === "sunday9-10") {
+        document.getElementById('9sun').innerHTML = desc;
+      }
+      else if (con() === "monday10-11") {
+        document.getElementById('10mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday10-11") {
+        document.getElementById('10tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday10-11") {
+        document.getElementById('10wed').innerHTML = desc;
+      }
+      else if (con() === "thursday10-11") {
+        document.getElementById('10thu').innerHTML = desc;
+      }
+      else if (con() === "friday10-11") {
+        document.getElementById('10fri').innerHTML = desc;
+      }
+      else if (con() === "saturday10-11") {
+        document.getElementById('10sat').innerHTML = desc;
+      }
+      else if (con() === "sunday10-11") {
+        document.getElementById('10sun').innerHTML = desc;
+      }
+      else if (con() === "monday11-12") {
+        document.getElementById('11mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday11-12") {
+        document.getElementById('11tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday11-12") {
+        document.getElementById('11wed').innerHTML = desc;
+      }
+      else if (con() === "thursday11-12") {
+        document.getElementById('11thu').innerHTML = desc;
+      }
+      else if (con() === "friday11-12") {
+        document.getElementById('11fri').innerHTML = desc;
+      }
+      else if (con() === "saturday11-12") {
+        document.getElementById('11sat').innerHTML = desc;
+      }
+      else if (con() === "sunday11-12") {
+        document.getElementById('11sun').innerHTML = desc;
+      }
+      else if (con() === "monday12-1") {
+       document.getElementById('12mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday12-1") {
+        document.getElementById('12tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday12-1") {
+        document.getElementById('12wed').innerHTML = desc;
+      }
+      else if (con() === "thursday12-1") {
+        document.getElementById('12thu').innerHTML = desc;
+      }
+      else if (con() === "friday12-1") {
+        document.getElementById('12fri').innerHTML = desc;
+      }
+      else if (con() === "saturday12-1") {
+        document.getElementById('12sat').innerHTML = desc;
+      }
+      else if (con() === "sunday12-1") {
+        document.getElementById('12sun').innerHTML = desc;
+      }
+      else if (con() === "monday1-2") {
+        document.getElementById('1mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday1-2") {
+        document.getElementById('1tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday1-2") {
+        document.getElementById('1wed').innerHTML = desc;
+      }
+      else if (con() === "thursday1-2") {
+        document.getElementById('1thu').innerHTML = desc;
+      }
+      else if (con() === "friday1-2") {
+        document.getElementById('1fri').innerHTML = desc;
+      }
+      else if (con() === "saturday1-2") {
+        document.getElementById('1sat').innerHTML = desc;
+      }
+      else if (con() === "sunday1-2") {
+        document.getElementById('1sun').innerHTML = desc;
+      }
+      else if (con() === "monday2-3") {
+        document.getElementById('2mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday2-3") {
+        document.getElementById('2tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday2-3") {
+        document.getElementById('2wed').innerHTML = desc;
+      }
+      else if (con() === "thursday2-3") {
+        document.getElementById('2thu').innerHTML = desc;
+      }
+      else if (con() === "friday2-3") {
+        document.getElementById('2fri').innerHTML = desc;
+      }
+      else if (con() === "saturday2-3") {
+        document.getElementById('2sat').innerHTML = desc;
+      }
+      else if (con() === "sunday2-3") {
+        document.getElementById('2sun').innerHTML = desc;
+      }
+      else if (con() === "monday3-4") {
+        document.getElementById('3mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday3-4") {
+        document.getElementById('3tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday3-4") {
+        document.getElementById('3wed').innerHTML = desc;
+      }
+      else if (con() === "thursday3-4") {
+        document.getElementById('3thu').innerHTML = desc;
+      }
+      else if (con() === "friday3-4") {
+        document.getElementById('3fri').innerHTML = desc;
+      }
+      else if (con() === "saturday3-4") {
+        document.getElementById('3sat').innerHTML = desc;
+      }
+      else if (con() === "sunday3-4") {
+        document.getElementById('3sun').innerHTML = desc;
+      }
+      else if (con() === "monday4-5") {
+        document.getElementById('4mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday4-5") {
+        document.getElementById('4tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday4-5") {
+        document.getElementById('4wed').innerHTML = desc;
+      }
+      else if (con() === "thursday4-5") {
+        document.getElementById('4thu').innerHTML = desc;
+      }
+      else if (con() === "friday4-5") {
+        document.getElementById('4fri').innerHTML = desc;
+      }
+      else if (con() === "saturday4-5") {
+        document.getElementById('4sat').innerHTML = desc;
+      }
+      else if (con() === "sunday4-5") {
+        document.getElementById('4sun').innerHTML = desc;
+      }
+      else if (con() === "monday5-6") {
+        document.getElementById('5mon').innerHTML = desc;
+      }
+      else if (con() === "tuesday5-6") {
+        document.getElementById('5tue').innerHTML = desc;
+      }
+      else if (con() === "wednesday5-6") {
+        document.getElementById('5wed').innerHTML = desc;
+      }
+      else if (con() === "thursday5-6") {
+        document.getElementById('5thu').innerHTML = desc;
+      }
+      else if (con() === "friday5-6") {
+        document.getElementById('5fri').innerHTML = desc;
+      }
+      else if (con() === "saturday5-6") {
+        document.getElementById('5sat').innerHTML = desc;
+      }
+      else {
+        document.getElementById('5sun').innerHTML = desc;
+      }
+    }
+    function load() {
+      var desc = document.getElementById('tabledesc').value;
+
+         if (con() === "monday8-9") {
+          document.getElementById('8mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday8-9") {
+           document.getElementById('8tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday8-9") {
+           document.getElementById('8wed').innerHTML = desc;
+         }
+         else if (con() === "thursday8-9") {
+           document.getElementById('8thu').innerHTML = desc;
+         }
+         else if (con() === "friday8-9") {
+           document.getElementById('8fri').innerHTML = desc;
+         }
+         else if (con() === "saturday8-9") {
+           document.getElementById('8sat').innerHTML = desc;
+         }
+         else if (con() === "sunday8-9") {
+           document.getElementById('8sun').innerHTML = desc;
+         }
+         else if (con() === "monday9-10") {
+           document.getElementById('9mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday9-10") {
+           document.getElementById('9tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday9-10") {
+           document.getElementById('9wed').innerHTML = desc;
+         }
+         else if (con() === "thursday9-10") {
+           document.getElementById('9thu').innerHTML = desc;
+         }
+         else if (con() === "friday9-10") {
+           document.getElementById('9fri').innerHTML = desc;
+         }
+         else if (con() === "saturday9-10") {
+           document.getElementById('9sat').innerHTML = desc;
+         }
+         else if (con() === "sunday9-10") {
+           document.getElementById('9sun').innerHTML = desc;
+         }
+         else if (con() === "monday10-11") {
+           document.getElementById('10mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday10-11") {
+           document.getElementById('10tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday10-11") {
+           document.getElementById('10wed').innerHTML = desc;
+         }
+         else if (con() === "thursday10-11") {
+           document.getElementById('10thu').innerHTML = desc;
+         }
+         else if (con() === "friday10-11") {
+           document.getElementById('10fri').innerHTML = desc;
+         }
+         else if (con() === "saturday10-11") {
+           document.getElementById('10sat').innerHTML = desc;
+         }
+         else if (con() === "sunday10-11") {
+           document.getElementById('10sun').innerHTML = desc;
+         }
+         else if (con() === "monday11-12") {
+           document.getElementById('11mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday11-12") {
+           document.getElementById('11tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday11-12") {
+           document.getElementById('11wed').innerHTML = desc;
+         }
+         else if (con() === "thursday11-12") {
+           document.getElementById('11thu').innerHTML = desc;
+         }
+         else if (con() === "friday11-12") {
+           document.getElementById('11fri').innerHTML = desc;
+         }
+         else if (con() === "saturday11-12") {
+           document.getElementById('11sat').innerHTML = desc;
+         }
+         else if (con() === "sunday11-12") {
+           document.getElementById('11sun').innerHTML = desc;
+         }
+         else if (con() === "monday12-1") {
+          document.getElementById('12mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday12-1") {
+           document.getElementById('12tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday12-1") {
+           document.getElementById('12wed').innerHTML = desc;
+         }
+         else if (con() === "thursday12-1") {
+           document.getElementById('12thu').innerHTML = desc;
+         }
+         else if (con() === "friday12-1") {
+           document.getElementById('12fri').innerHTML = desc;
+         }
+         else if (con() === "saturday12-1") {
+           document.getElementById('12sat').innerHTML = desc;
+         }
+         else if (con() === "sunday12-1") {
+           document.getElementById('12sun').innerHTML = desc;
+         }
+         else if (con() === "monday1-2") {
+           document.getElementById('1mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday1-2") {
+           document.getElementById('1tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday1-2") {
+           document.getElementById('1wed').innerHTML = desc;
+         }
+         else if (con() === "thursday1-2") {
+           document.getElementById('1thu').innerHTML = desc;
+         }
+         else if (con() === "friday1-2") {
+           document.getElementById('1fri').innerHTML = desc;
+         }
+         else if (con() === "saturday1-2") {
+           document.getElementById('1sat').innerHTML = desc;
+         }
+         else if (con() === "sunday1-2") {
+           document.getElementById('1sun').innerHTML = desc;
+         }
+         else if (con() === "monday2-3") {
+           document.getElementById('2mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday2-3") {
+           document.getElementById('2tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday2-3") {
+           document.getElementById('2wed').innerHTML = desc;
+         }
+         else if (con() === "thursday2-3") {
+           document.getElementById('2thu').innerHTML = desc;
+         }
+         else if (con() === "friday2-3") {
+           document.getElementById('2fri').innerHTML = desc;
+         }
+         else if (con() === "saturday2-3") {
+           document.getElementById('2sat').innerHTML = desc;
+         }
+         else if (con() === "sunday2-3") {
+           document.getElementById('2sun').innerHTML = desc;
+         }
+         else if (con() === "monday3-4") {
+           document.getElementById('3mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday3-4") {
+           document.getElementById('3tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday3-4") {
+           document.getElementById('3wed').innerHTML = desc;
+         }
+         else if (con() === "thursday3-4") {
+           document.getElementById('3thu').innerHTML = desc;
+         }
+         else if (con() === "friday3-4") {
+           document.getElementById('3fri').innerHTML = desc;
+         }
+         else if (con() === "saturday3-4") {
+           document.getElementById('3sat').innerHTML = desc;
+         }
+         else if (con() === "sunday3-4") {
+           document.getElementById('3sun').innerHTML = desc;
+         }
+         else if (con() === "monday4-5") {
+           document.getElementById('4mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday4-5") {
+           document.getElementById('4tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday4-5") {
+           document.getElementById('4wed').innerHTML = desc;
+         }
+         else if (con() === "thursday4-5") {
+           document.getElementById('4thu').innerHTML = desc;
+         }
+         else if (con() === "friday4-5") {
+           document.getElementById('4fri').innerHTML = desc;
+         }
+         else if (con() === "saturday4-5") {
+           document.getElementById('4sat').innerHTML = desc;
+         }
+         else if (con() === "sunday4-5") {
+           document.getElementById('4sun').innerHTML = desc;
+         }
+         else if (con() === "monday5-6") {
+           document.getElementById('5mon').innerHTML = desc;
+         }
+         else if (con() === "tuesday5-6") {
+           document.getElementById('5tue').innerHTML = desc;
+         }
+         else if (con() === "wednesday5-6") {
+           document.getElementById('5wed').innerHTML = desc;
+         }
+         else if (con() === "thursday5-6") {
+           document.getElementById('5thu').innerHTML = desc;
+         }
+         else if (con() === "friday5-6") {
+           document.getElementById('5fri').innerHTML = desc;
+         }
+         else if (con() === "saturday5-6") {
+           document.getElementById('5sat').innerHTML = desc;
+         }
+         else {
+           document.getElementById('5sun').innerHTML = desc;
+         }
+
+    }
+
+
+    </script>
+
+  </head>
+  <!--TopBar-->
+  <header>
+    <img class="logo" src="logo.png" alt="logo" width="50px">
+    <h1 id="title">Easy Schedule Maker</h1>
+    <div id="abtUsBorder">
+      <nav>
+        <a href="mainScheduleMaker.html" class="nav">Home</a>
+      </nav>
+    </div>
+  </header>
+  <!--Schedule-->
+  <body class="bg">
+    <div class="schedule" id="schedule">
+      <table class="table" style="width:100%">
+        <tr>
+          <th id="tabletitle" colspan="8"><h2 contenteditable="true">Title</h2></th>
+        </tr>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <th colspan= "1">8.00 - 9.00</th>
+          <td id="8mon"></td>
+          <td id="8tue"></td>
+          <td id="8wed"></td>
+          <td id="8thu"></td>
+          <td id="8fri"></td>
+          <td id="8sat"></td>
+          <td id="8sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">9.00 - 10.00</th>
+          <td id="9mon"></td>
+          <td id="9tue"></td>
+          <td id="9wed"></td>
+          <td id="9thu"></td>
+          <td id="9fri"></td>
+          <td id="9sat"></td>
+          <td id="9sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">10.00 - 11.00</th>
+          <td id="10mon"></td>
+          <td id="10tue"></td>
+          <td id="10wed"></td>
+          <td id="10thu"></td>
+          <td id="10fri"></td>
+          <td id="10sat"></td>
+          <td id="10sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">11.00 - 12.00</th>
+          <td id="11mon"></td>
+          <td id="11tue"></td>
+          <td id="11wed"></td>
+          <td id="11thu"></td>
+          <td id="11fri"></td>
+          <td id="11sat"></td>
+          <td id="11sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">12.00 - 1.00</th>
+          <td id="12mon"></td>
+          <td id="12tue"></td>
+          <td id="12wed"></td>
+          <td id="12thu"></td>
+          <td id="12fri"></td>
+          <td id="12sat"></td>
+          <td id="12sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">1.00 - 2.00</th>
+          <td id="1mon"></td>
+          <td id="1tue"></td>
+          <td id="1wed"></td>
+          <td id="1thu"></td>
+          <td id="1fri"></td>
+          <td id="1sat"></td>
+          <td id="1sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">2.00 - 3.00</th>
+          <td id="2mon"></td>
+          <td id="2tue"></td>
+          <td id="2wed"></td>
+          <td id="2thu"></td>
+          <td id="2fri"></td>
+          <td id="2sat"></td>
+          <td id="2sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">3.00 - 4.00</th>
+          <td id="3mon"></td>
+          <td id="3tue"></td>
+          <td id="3wed"></td>
+          <td id="3thu"></td>
+          <td id="3fri"></td>
+          <td id="3sat"></td>
+          <td id="3sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">4.00 - 5.00</th>
+          <td id="4mon"></td>
+          <td id="4tue"></td>
+          <td id="4wed"></td>
+          <td id="4thu"></td>
+          <td id="4fri"></td>
+          <td id="4sat"></td>
+          <td id="4sun"></td>
+        </tr>
+        <tr>
+          <th colspan= "1">5.00 - 6.00</th>
+          <td id="5mon"></td>
+          <td id="5tue"></td>
+          <td id="5wed"></td>
+          <td id="5thu"></td>
+          <td id="5fri"></td>
+          <td id="5sat"></td>
+          <td id="5sun"></td>
+        </tr>
+      </table>
+
+
+    </div>
+
+
+    <!--Input-->
+    <div class="inputall">
+      <input type="text" id="tabledesc">
+      <br><br>
+      <form>
+        <label>Choose time:</label>
+        <div class="selecttime">
+        <select name="time" id="time">
+          <option id="89" value="8-9" selected>8-9</option>
+          <option id="910" value="9-10">9-10</option>
+          <option id="1011" value="10-11">10-11</option>
+          <option id="1112" value="11-12">11-12</option>
+          <option id="121" value="12-1">12-1</option>
+          <option id="12" value="1-2">1-2</option>
+          <option id="23" value="2-3">2-3</option>
+          <option id="34" value="3-4">3-4</option>
+          <option id="45" value="4-5">4-5</option>
+          <option id="56" value="5-6">5-6</option>
+        </select>
+        <div class="selecttime_arrow">
+        </div>
+        </div>
+        <br>
+        <label>Choose day:</label>
+        <div class="selectday">
+        <select name="day" id="day">
+          <option id="monday" value="monday" selected>Mon</option>
+          <option id="tuesday" value="tuesday">Tues</option>
+          <option id="wednesday" value="wednesday">Wed</option>
+          <option id="thursday" value="thursday">Thu</option>
+          <option id="friday" value="friday">Fri</option>
+          <option id="saturday" value="saturday">Sat</option>
+          <option id="sunday" value="sunday">Sun</option>
+        </select>
+        <div class="selectday_arrow">
+        </div>
+        </div>
+        <br><br>
+        <div id="buttons">
+        <input id="input" onclick="load(); return false;" type="submit" value="Add">
+        <input id="btn_convert" onclick="window.print();return false;" type="button" value="Save">
+        <input class="delete" onclick="del();return false;" type="submit" value="Delete">
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p><center class="bawahle">&#169 2021 Helik0fer. All rights reserved.</center></p>
+  </footer>
+</html>
